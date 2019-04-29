@@ -1,0 +1,32 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    text-shadow: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-weight: normal;
+    opacity: 1;
+}
+h1, h2, a:link{
+    width: 100%;
+    display: block;
+    font: normal 12pt 'Times New Roman', Times, serif;
+    color: black;
+    margin:0px;
+}
+.menu-top{
+    text-align: left;
+}
+.menu-top a{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    color: black;
+}
+aside, .menu-bottom, script, #openButton, #closeButton{
+    display: none;
+}

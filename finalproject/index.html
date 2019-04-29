@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Energy Profile: Home</title>
+        <meta name="description" content="My Energy Profile is an organization built to help consumers and business owners build energy efficient buildings.">
+        <meta name="keywords" content="my energy profile, energy profile, energy, electricity, renewable energy, appliances, efficient, energy cost, energy calculator, electrical systems">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/screen.css" media="all"/>
+        <link rel="stylesheet" href="css/print.css" media="print"/>
+    </head>
+<body>
+    <main>
+        <div>
+            <div id="openButton" class="menu-button" style="position:fixed; top:10px; right:10px;" onclick="openMenu()">&#9776;<br><div>Toggle Menu</div></div>
+        </div>
+        <div>
+            <div id="closeButton" class="menu-button" style="position:fixed; top:100px; right:10px; display:none;" onclick="closeMenu()">&#9776;<br><div>Toggle Menu</div></div>
+        </div>
+        <script>
+            function openMenu() {
+            document.getElementById("topNav").style.position="fixed";
+            document.getElementById("topNav").style.top="0px";
+            document.getElementById("topNav").style.left="0px";
+            document.getElementById("openButton").style.display="none";
+            document.getElementById("closeButton").style.display="";
+            }
+            function closeMenu() {
+            document.getElementById("topNav").style.position="static";
+            document.getElementById("topNav").style.top="";
+            document.getElementById("topNav").style.left="";
+            document.getElementById("openButton").style.display="";
+            document.getElementById("closeButton").style.display="none";
+            }
+        </script>
+        <header>
+            <h1>My Energy Profile</h1>
+        </header>
+        <nav id="topNav" class="menu-top"> 
+            <a href="index.html">Home</a> 
+            <a href="articles-directory.html">Resources</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <article>
+        <section class="row left">
+            <div class="col-m-6 col-8">
+                <h2>About Us</h2>
+                <p>My Energy Profile is an organization deditated to helping homes and businesses save energy and reduce costs. Our website includes a vast database of informational and interactive resources to aid users in planning and building the right systems for them.
+            </div>
+            <aside class="col-m-6 col-4">
+                <img class="img-med" alt="Plugging Electrical Cords Into a Surge Protector" src="media/cables-medium.jpg"  style="padding:10px; max-width:100%;"> 
+                <img class="img-lg" alt="Plugging Electrical Cords Into a Surge Protector" src="media/cables.jpg"  style="padding:10px; max-width:100%;"> 
+            </aside>
+        </section>
+        <section class="row right">
+            <div class="col-m-6 col-8">
+                <h2>Our Resource Database</h2>
+                <p>The My Energy Profile database includes information on major types of electrical generation to help demistify the costs and benefits of each. We also have general profiles on energy-intensive appliances to aid you in pinpointing the highest influencers of your electric bill.<br> <br>Once you understand the biggest ways to make a change, you can directly compare appliances and home-generators from our catalog, which includes consumer and commercial systems from most major brands. Both new and old releases are available, allowing you to contrast older components with newer alternatives.
+                </p>
+            </div>
+            <aside class="col-m-6 col-4">
+                <img class="img-med" alt="Common Kitchen Appliances" src="media/appliance-medium.jpg"  style="padding:10px; max-width:100%;">  
+                <img class="img-lg" alt="Common Kitchen Appliances" src="media/appliance-medium.jpg"  style="padding:10px; max-width:100%;">  
+            </aside>
+        </section>
+        <section class="row left">
+            <div class="col-m-6 col-8">
+                <h2>Planning Your Future</h2>
+                <p>Already own a home or business? Our comprehensive calculator allows you to input statistics of your current buildings to create your energy profile. Once done, you can estimate changes in energy useage and cost by adding, removing, or swapping out appliances and generators. All plans can be saved online or as a simple text file so you can start now and pick up again later with ease!<br>
+                Don't own a building but plan on constructing one soon? You can create a hypothetical profile to help you plan out electrical systems and appliances for your future construction.
+                </p>
+            </div>
+            <aside class="col-m-6 col-4">
+                <img class="img-med" alt="Antique-Modern Light Bulbs" src="media/antique-light-medium.jpg"  style="padding:10px; max-width:100%;"> 
+                <img class="img-lg" alt="Antique-Modern Light Bulbs" src="media/antique-light-medium.jpg"  style="padding:10px; max-width:100%;"> 
+            </aside>
+        </section>
+        </article>
+    </main>
+    <footer> 
+        <p>&copy; <a href="https://www.linkedin.com/in/william-lewellen/">William G. Lewellen</a><br>Last Updated on April 21st, 2019</p>
+        <div class="menu-bottom"> 
+            <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a> 
+            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a> 
+            <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a> 
+        </div>
+    </footer>
+</body>
+</html>

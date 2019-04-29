@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Noto+Sans:700|Raleway');
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    background: url('../media/windows-tile.jpg'), linear-gradient(to bottom left, rgba(255, 255, 255, 0), rgba(222, 247, 250, 0.562), rgba(255, 94, 0, 0.658), rgba(255, 102, 0, 0.658)) repeat;
+    background-blend-mode: overlay;
+    font: 12pt Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+main{
+    margin:0px 10px;
+}
+section{
+    background-color: rgba(211, 211, 211, 0.753);
+}
+.left div p, .right div p{
+    text-align: left;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+footer{
+    background-color: black;
+    color: lightgray;
+    font: 12pt 'Lato', Helvetica, sans-serif;
+    padding-top: 20px;
+}
+h1{
+    font-family: 'Noto Sans', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+	top:0%;
+	color:darkorange;
+    padding: 20px 0px;
+    margin: 0px;
+    height: auto;
+}
+h2{
+    font-family: 'Raleway', Helvetica, sans-serif
+}
+.menu-top{
+	width: 100%;
+    background-color: rgb(60, 157, 218);
+    overflow: auto;
+    margin: 0px 0px 10px 0px;
+}
+.menu-top a{
+	float: left;
+	width: 25%;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	color: white;
+    font: bold 4vw 'Lato', Helvetica, sans-serif;
+    text-decoration: none;
+}
+.menu-bottom{
+	width: 100%;
+    overflow: auto;
+}
+.menu-bottom a{
+	float: left;
+	width: 25%;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+    color: lightgray;
+    font: bold 6vw 'Lato', Helvetica, sans-serif;
+    text-decoration: none;
+}
+.menu-bottom a:visited, .menu-top a:visited{
+    color: lightgray;
+}
+.menu-bottom a:hover, .menu-top a:hover{
+  background-color: #000;
+  color: darkorange;
+  text-decoration: none;
+}
+.menu-bottom a:active, .menu-top a:active{
+    color: lightskyblue;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:visited{
+    color: lightgray;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: darkorange;
+}
+a:active{
+    text-decoration: underline;
+    color: lightskyblue;
+}
+.menu-button{
+    font-size:4vw; 
+    font-weight:bold; 
+    background-color:deepskyblue; 
+    color:white; 
+    border: 10px solid deepskyblue; 
+    border-radius: 20px; 
+    cursor:pointer;
+}
+.menu-button div{
+    font-size: 3vw; 
+    font-weight:normal;
+}
+/* For mobile phones: */
+[class*="col-"]{
+    width: 100%;
+    float:left;
+    padding:15px;
+}
+@media only screen and (min-width: 0px){
+    h1{
+        font-size: 6vw;
+    }
+    .img-lg{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    h1{
+        font-size: 4vw;
+        text-shadow: .2vw .2vw rgba(60, 157, 218, 0.623);
+    }
+    .right div{
+        float: right;
+    }
+    .menu-button{
+        font-size:3vw; 
+    }
+    .menu-button div{
+        font-size: 2vw; 
+    }
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+        background: url('../media/windows.jpg') center repeat;
+        background-blend-mode: overlay;
+    }
+    .menu-top a, .menu-bottom a, h1{
+        font-size: 3vw;
+    }
+    div p{
+        font-size: 14pt;
+    }
+    .right div{
+        float: right;
+    }
+    .img-med{
+        display: none;
+    }
+    .img-lg{
+        display: unset;
+    }
+    .menu-button{
+        font-size:2vw; 
+    }
+    .menu-button div{
+        font-size: 1vw; 
+    }
+}
